@@ -2,10 +2,13 @@
   "name": "laado-saas-react",
   "version": "1.0.0",
   "private": true,
+   "homepage":"https://desuraj.github.io/e-commerce-web-saas",
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
