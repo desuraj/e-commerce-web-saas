@@ -2,7 +2,7 @@
   "name": "laado-saas-react",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://desuraj.github.io/e-commerce-web-saas",
+  "homepage": "https://github.com/desuraj/e-commerce-web-saas",
   "scripts": {
     "start": "vite",
     "build": "vite build",
