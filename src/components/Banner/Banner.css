@@ -1,0 +1,32 @@
+.banner {
+  width: 100%;
+  min-height: 350px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #333;
+}
+
+.shop-btn {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+  background-color: #e85d3c;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  z-index: 10;              /* Make sure it's above overlays */
+}
+
+.shop-btn:hover {
+  background-color: #d14c2f;
+}

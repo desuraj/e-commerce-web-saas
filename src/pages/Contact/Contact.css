@@ -1,0 +1,21 @@
+.contact-form {
+  display: grid;
+  gap: 10px;
+  max-width: 460px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.contact-form button {
+  background: var(--primaryColor);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+}

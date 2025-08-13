@@ -1,0 +1,28 @@
+:root {
+  --primaryColor: #E76F51;
+  --secondaryColor: #2A9D8F;
+  --accentColor: #F4A261;
+  --textColor: #333333;
+  --backgroundColor: #FAF9F6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+  background: var(--backgroundColor);
+  color: var(--textColor);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+button {
+  cursor: pointer;
+}

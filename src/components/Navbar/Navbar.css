@@ -1,0 +1,27 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 24px;
+  background: var(--backgroundColor);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--textColor); }
+.brand img { width: 36px; height: 36px; object-fit: contain; }
+.brand span { font-weight: 700; color: var(--primaryColor); }
+
+.navlinks { display: flex; gap: 16px; }
+.navlinks a {
+  text-decoration: none;
+  color: var(--textColor);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+.navlinks a.active { background: var(--accentColor); color: #111; }
+
+.cart { font-size: 20px; }

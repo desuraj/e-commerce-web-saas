@@ -1,0 +1,36 @@
+.footer {
+    background: #fff;
+    margin-top: 40px;
+    padding: 24px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.brandline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brandline img {
+    width: 28px;
+    height: 28px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.copy {
+    margin-top: 16px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}

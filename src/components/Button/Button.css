@@ -1,0 +1,12 @@
+.btn {
+  background: var(--primaryColor);
+  border: none;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  transition: transform .05s ease, background .2s ease;
+}
+.btn:hover { background: var(--secondaryColor); }
+.btn:active { transform: translateY(1px); }
