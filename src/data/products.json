@@ -2,12 +2,12 @@
   {
     "name": "Haldi",
     "price": 100,
+    "Type": "Powder",
     "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1001.jpg",
     "details": {
       "Quantity": "1kg",
       "Material": "Organic",
       "Color": "Yellow",
-      "Type": "Powder",
       "Model": "ECO123",
       "Serial": "SN1001"
     }
@@ -15,6 +15,7 @@
   {
     "name": "Jeera",
     "price": 200,
+    "Type": "Powder",
     "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1002.jpg",
     "details": {
       "Quantity": "500g",
@@ -28,6 +29,7 @@
   {
     "name": "Sattu",
     "price": 150,
+    "Type": "Seeds",
     "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1003.jpg",
     "details": {
       "Quantity": "500g",
@@ -41,6 +43,7 @@
   {
     "name": "Haldi",
     "price": 100,
+    "Type": "Seeds",
     "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1001.jpg",
     "details": {
       "Quantity": "1kg",
@@ -54,6 +57,7 @@
   {
     "name": "Jeera",
     "price": 200,
+    "Type": "Seed",
     "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1002.jpg",
     "details": {
       "Quantity": "500g",
@@ -67,6 +71,7 @@
   {
     "name": "Sattu",
     "price": 150,
+    "Type": "Seed",
     "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1003.jpg",
     "details": {
       "Quantity": "500g",
@@ -80,6 +85,7 @@
   {
     "name": "Haldi",
     "price": 100,
+    "Type": "Seeds",
     "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1001.jpg",
     "details": {
       "Quantity": "1kg",
@@ -93,6 +99,7 @@
   {
     "name": "Jeera",
     "price": 200,
+    "Type": "Powder",
     "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1002.jpg",
     "details": {
       "Quantity": "500g",
@@ -106,6 +113,7 @@
   {
     "name": "Sattu",
     "price": 150,
+    "Type": "Powder",
     "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1003.jpg",
     "details": {
       "Quantity": "500g",
@@ -119,6 +127,7 @@
   {
     "name": "Haldi",
     "price": 100,
+    "Type": "Seed",
     "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1001.jpg",
     "details": {
       "Quantity": "1kg",
@@ -132,6 +141,7 @@
   {
     "name": "Jeera",
     "price": 200,
+    "Type": "Seeds",
     "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1002.jpg",
     "details": {
       "Quantity": "500g",
@@ -145,6 +155,7 @@
   {
     "name": "Sattu",
     "price": 150,
+    "Type": "Powder",
     "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1003.jpg",
     "details": {
       "Quantity": "500g",

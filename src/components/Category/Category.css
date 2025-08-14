@@ -1,0 +1,40 @@
+.category-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px 0;
+  scrollbar-width: none; /* Firefox */
+}
+
+.category-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.category-item {
+  flex: 0 0 auto;
+  text-align: center;
+  cursor: pointer;
+  width: 80px;
+}
+
+.category-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 5px;
+}
+
+.category-item span {
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+  white-space: nowrap;
+  color: #333;
+}
+
+.category-item:hover img {
+  border-color: #2874f0;
+}
