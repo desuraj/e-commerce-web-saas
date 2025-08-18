@@ -1,35 +1,42 @@
 import React, { useEffect, useState } from "react";
 import "./Category.css";
-import products from "../../data/products.json"; // Will replace with API later
+import products from "../../data/products.json";
+import categoryImages from "../../data/categoryImages";
 
 export default function Category({ onCategorySelect }) {
-    const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [selected, setSelected] = useState("All");  // 🔹 track selected category
 
-    useEffect(() => {
-        // Extract unique Type values from products.json
-        const uniqueTypes = [...new Set(products.map((p) => p.Type))];
-        // Add "All" at start
-        setCategories(["All", ...uniqueTypes]);
-    }, []);
+  useEffect(() => {
+    const uniqueTypes = [...new Set(products.map((p) => p.Type))];
+    setCategories(["All", ...uniqueTypes]);
+  }, []);
 
-    return (
-        <div className="category-container">
-            {categories.map((cat, idx) => (
-                <div
-                    className="category-item"
-                    key={idx}
-                    onClick={() => onCategorySelect(cat)}
-                >
-                    {/* Placeholder icon for now — in future, we can map Type to an actual image */}
-                    <img
-                        src={`https://via.placeholder.com/80?text=${encodeURIComponent(
-                            cat
-                        )}`}
-                        alt={cat}
-                    />
-                    <span>{cat}</span>
-                </div>
-            ))}
+  const handleSelect = (cat) => {
+    setSelected(cat);
+    setTimeout(() => setClicked(null), 150);  // 150ms baad reset
+  setSelected(cat);
+    onCategorySelect(cat);
+  };
+  
+
+  return (
+    <div className="category-container">
+      {categories.map((cat, idx) => (
+        <div
+          className={`category-item ${selected === cat ? "active" : ""}`}  // 🔹 add active class
+          key={idx}
+          onClick={() => handleSelect(cat)}
+        >
+          <img
+            src={categoryImages[cat] || categoryImages["All"]} 
+            alt={cat}
+            className="category-icon"
+          />
+          <span>{cat}</span>
         </div>
-    );
+      ))}
+    </div>
+  );
 }
+

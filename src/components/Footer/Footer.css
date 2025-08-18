@@ -1,36 +1,49 @@
 .footer {
-    background: #fff;
-    margin-top: 40px;
-    padding: 24px;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  background: #fff;
+  padding: 24px 20px;
+  color: var(--textColor);
+  position: static; /* ensure footer doesn't overlay content */
+  bottom: auto;
+  left: auto;
+  right: auto;
+  width: 100%;
+  box-shadow: none;
+  z-index: 1; /* keep behind overlays if needed */
 }
 
-.cols {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+/* keep layout inside footer */
+.footer .cols {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* small screens */
+@media (max-width: 600px) {
+  .footer .cols { flex-direction: column; }
 }
 
 .brandline {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .brandline img {
-    width: 28px;
-    height: 28px;
+  width: 28px;
+  height: 28px;
 }
 
 .socials {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .copy {
-    margin-top: 16px;
-    text-align: center;
-    color: #666;
-    font-size: 14px;
+  margin-top: 16px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
 }
