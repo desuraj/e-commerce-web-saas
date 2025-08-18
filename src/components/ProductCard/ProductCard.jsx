@@ -1,7 +1,6 @@
 import React from 'react'
 import './ProductCard.css'
 import CONFIG from '../../config'
-import ProductCard from "./ProductCard";
 
 export default function ProductCard({ product, onViewDetails }) {
   return (

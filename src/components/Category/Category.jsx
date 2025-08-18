@@ -5,7 +5,7 @@ import categoryImages from "../../data/categoryImages";
 
 export default function Category({ onCategorySelect }) {
   const [categories, setCategories] = useState([]);
-  const [selected, setSelected] = useState("All");  // 🔹 track selected category
+  const [selected, setSelected] = useState("All");  // track selected category
 
   useEffect(() => {
     const uniqueTypes = [...new Set(products.map((p) => p.Type))];
@@ -13,23 +13,20 @@ export default function Category({ onCategorySelect }) {
   }, []);
 
   const handleSelect = (cat) => {
-    setSelected(cat);
-    setTimeout(() => setClicked(null), 150);  // 150ms baad reset
-  setSelected(cat);
-    onCategorySelect(cat);
+    setSelected(cat);            // update selected category
+    onCategorySelect(cat);       // notify parent
   };
-  
 
   return (
     <div className="category-container">
       {categories.map((cat, idx) => (
         <div
-          className={`category-item ${selected === cat ? "active" : ""}`}  // 🔹 add active class
+          className={`category-item ${selected === cat ? "active" : ""}`}
           key={idx}
           onClick={() => handleSelect(cat)}
         >
           <img
-            src={categoryImages[cat] || categoryImages["All"]} 
+            src={categoryImages[cat] || categoryImages["All"]}
             alt={cat}
             className="category-icon"
           />
@@ -39,4 +36,3 @@ export default function Category({ onCategorySelect }) {
     </div>
   );
 }
-
