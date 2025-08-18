@@ -30,7 +30,7 @@ const CONFIG = {
     secondaryColor: "#2A9D8F",
     accentColor: "#F4A261",
     textColor: "#333333",
-    backgroundColor: "#FAF9F6"
+    backgroundColor: "#ffffffff"
   },
 
   // --- CURRENCY SETTINGS ---

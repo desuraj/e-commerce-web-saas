@@ -21,12 +21,16 @@ export default function App() {
     <Router>
       <Navbar />
       <main className="container">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+       <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+  
+            {/* Redirect any unknown route to Home */}
+            <Route path="*" element={<Home />} />
+            </Routes>
+
       </main>
       <Footer />
     </Router>
