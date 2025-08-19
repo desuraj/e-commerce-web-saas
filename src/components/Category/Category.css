@@ -1,62 +1,64 @@
+/* wrapper */
+.category-wrap {
+  width: 100%;
+}
+/* scrollable container */
 .category-container {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  gap: 20px;
+  gap: 16px;
+  align-items: flex-start;
   overflow-x: auto;
-  padding: 10px;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  padding: 8px 0 14px;
+  scrollbar-width: thin;
 }
-
-.category-container::-webkit-scrollbar {
-  display: none;
-}
-
+/* item */
 .category-item {
-  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  gap: 6px;
   cursor: pointer;
+  user-select: none;
+  min-width: 84px;
 }
-
+/* icon */
 .category-icon {
-  width: 80px;
-  height: 80px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #ffffff;
-  margin-bottom: 8px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 3px solid #c2c0c0;
+  background: #fff;
+}
+/* label */
+.category-label {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #555;
+  padding: 0 6px 2px;
+  white-space: nowrap;
+}
+.category-item.active .category-label {
+  color: #e7855f;
+  font-weight: 600;
 }
 
-/* styling for the category onlick*/
-
-.category-icon:active {
-  transform: scale(0.90);           
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}
 .category-item.active .category-icon {
-  border: 4px solid #e7855f;  
+  border-color:  #e7855f;
 }
-.category-item.clicked .category-icon {
-  transform: scale(0.95);
-  transition: transform 0.15s ease;
-}
-
-/* styling for the text */
-
-.category-item.active span {
-  position: relative;
-}
-
-.category-item.active span::after {
-  content: "";
-  display: block;
-  width: 90%;
+/* underline bar */
+.category-indicator {
+  position: absolute;
+  left: 0;
+  bottom: 0;
   height: 3px;
-  background-color: #ff5722;
-  margin: 4px auto 0;   /* space between text and line */
-  border-radius: 2px;
+  width: 0;
+  background: #e7855f;
+  border-radius: 999px;
+  transform: translateX(0);
+  transition: transform 160ms cubic-bezier(0.4, 0, 0.2, 1),
+              width 160ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  will-change: transform, width;
 }

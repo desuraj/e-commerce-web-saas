@@ -18,19 +18,18 @@ export default function App() {
   }, [])
 
   return (
-    <Router>
+    <Router basename="/e-commerce-web-saas">
       <Navbar />
       <main className="container">
-       <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/products" element={<Products />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-  
-            {/* Redirect any unknown route to Home */}
-            <Route path="*" element={<Home />} />
-            </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
 
+          {/* Redirect to Home */}
+          <Route path="*" element={<Home />} />
+        </Routes>
       </main>
       <Footer />
     </Router>

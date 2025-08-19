@@ -1,38 +1,90 @@
-/* Desktop: 4 per row */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-}
-/* Tablet: 3 per row */
-@media (max-width: 1024px) {
-  .product-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Mobile: 2 per row */
-@media (max-width: 768px) {
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 .product-card {
-  min-width: 0;
-  max-width: 100%;
-  box-sizing: border-box;
   background: #fff;
-  border-radius: 12px;
-  padding: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  align-items: center;
+  padding: 10px;
 }
-.product-card img {
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* image section */
+.product-image-wrap {
   width: 100%;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 8px;
+  padding-top: 100%; /* square */
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
-.product-card .cta { margin-top: auto; text-align: center; background: var(--accentColor); padding: 8px; border-radius: 10px; font-weight: 600; }
+
+.product-image {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.04);
+}
+
+/* info */
+.product-info {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.product-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin: 2px 0;
+}
+
+.product-price {
+  font-size: 14px;
+  font-weight: 500;
+  color: #e7855f;
+}
+
+/* CTA */
+.product-cta {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #fff;
+  background: #e7855f;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.product-card:hover .product-cta {
+  background: #cf6238;
+}
+
+/* mobile tweaks */
+@media (max-width: 600px) {
+  .product-card {
+    padding: 8px;
+    border-radius: 10px;
+  }
+  .product-name {
+    font-size: 13px;
+  }
+  .product-price {
+    font-size: 12px;
+  }
+  .product-cta {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
