@@ -35,3 +35,4 @@
   object-fit: cover;
   border-radius: 8px;
 }
+.product-card .cta { margin-top: auto; text-align: center; background: var(--accentColor); padding: 8px; border-radius: 10px; font-weight: 600; }
