@@ -45,21 +45,16 @@
 }
 .navlinks a {
   text-decoration: none;
-  color: #333;
-  margin: 0 10px;
-  padding: 6px 12px;
-  transition: color 0.2s ease;
+  color: var(--textColor);
+  padding: 8px 10px;
+  border-radius: 8px;
 }
 
 .navlinks a:hover {
   color: #e7855f;
 }
 
-.navlinks a.active {
-  color: #e7855f;       /* active link ka color */
-  font-weight: 600;     /* thoda bold */
-  border-bottom: 2px solid #e7855f; /* optional underline */
-}
+.navlinks a.active { background: var(--accentColor); color: #111; }
 
 
 /* Cart */
