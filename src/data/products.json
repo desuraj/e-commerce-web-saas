@@ -7,6 +7,7 @@
     "details": {
       "Quantity": "1kg",
       "Material": "Organic",
+      "Type": "Powder",
       "Color": "Yellow",
       "Model": "ECO123",
       "Serial": "SN1001"
@@ -20,8 +21,8 @@
     "details": {
       "Quantity": "500g",
       "Material": "Organic",
+      "Type": "Powder",
       "Color": "Brown",
-      "Type": "Seeds",
       "Model": "ECO124",
       "Serial": "SN1002"
     }
@@ -34,8 +35,8 @@
     "details": {
       "Quantity": "500g",
       "Material": "Organic",
-      "Color": "Brown",
       "Type": "Seeds",
+      "Color": "Brown",
       "Model": "ECO124",
       "Serial": "SN1002"
     }
@@ -48,8 +49,8 @@
     "details": {
       "Quantity": "1kg",
       "Material": "Organic",
+      "Type": "Seeds",
       "Color": "Yellow",
-      "Type": "Powder",
       "Model": "ECO123",
       "Serial": "SN1001"
     }
@@ -62,22 +63,22 @@
     "details": {
       "Quantity": "500g",
       "Material": "Organic",
-      "Color": "Brown",
-      "Type": "Seeds",
-      "Model": "ECO124",
-      "Serial": "SN1002"
-    }
-  },
-  {
-    "name": "Sattu",
-    "price": 150,
-    "Type": "Seed",
-    "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1003.jpg",
-    "details": {
-      "Quantity": "500g",
-      "Material": "Organic",
-      "Color": "Brown",
       "Type": "Seed",
+      "Color": "Brown",
+      "Model": "ECO124",
+      "Serial": "SN1002"
+    }
+  },
+  {
+    "name": "Sattu",
+    "price": 150,
+    "Type": "Seed",
+    "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1003.jpg",
+    "details": {
+      "Quantity": "500g",
+      "Material": "Organic",
+      "Type": "Seed",
+      "Color": "Brown",
       "Model": "ECO124",
       "Serial": "SN1002"
     }
@@ -90,8 +91,8 @@
     "details": {
       "Quantity": "1kg",
       "Material": "Organic",
+      "Type": "Seeds",
       "Color": "Yellow",
-      "Type": "Powder",
       "Model": "ECO123",
       "Serial": "SN1001"
     }
@@ -104,8 +105,8 @@
     "details": {
       "Quantity": "500g",
       "Material": "Organic",
+      "Type": "Powder",
       "Color": "Brown",
-      "Type": "Seeds",
       "Model": "ECO124",
       "Serial": "SN1002"
     }
@@ -118,8 +119,8 @@
     "details": {
       "Quantity": "500g",
       "Material": "Organic",
+      "Type": "Powder",
       "Color": "Brown",
-      "Type": "Seeds",
       "Model": "ECO124",
       "Serial": "SN1002"
     }
@@ -132,8 +133,8 @@
     "details": {
       "Quantity": "1kg",
       "Material": "Organic",
+      "Type": "Seed",
       "Color": "Yellow",
-      "Type": "Powder",
       "Model": "ECO123",
       "Serial": "SN1001"
     }
@@ -146,8 +147,8 @@
     "details": {
       "Quantity": "500g",
       "Material": "Organic",
-      "Color": "Brown",
       "Type": "Seeds",
+      "Color": "Brown",
       "Model": "ECO124",
       "Serial": "SN1002"
     }
@@ -160,8 +161,8 @@
     "details": {
       "Quantity": "500g",
       "Material": "Organic",
+      "Type": "Powder",
       "Color": "Brown",
-      "Type": "Seeds",
       "Model": "ECO124",
       "Serial": "SN1002"
     }
