@@ -7,6 +7,10 @@ import Category from '../../components/Category/Category';
 import './Home.css';
 
 export default function Home() {
+  useEffect(() => {
+    console.log('Home mounted')
+  }, [])
+
   const [selected, setSelected] = useState(null);
   const [products, setProducts] = useState(productsData);
   const [filteredProducts, setFilteredProducts] = useState(productsData);

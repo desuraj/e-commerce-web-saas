@@ -5,7 +5,7 @@ const CONFIG = {
   // tagline: "Pure Spices, Pure Taste!",
 
   // --- CONTACT INFO ---
-  whatsappNumber: "919123176448", // no '+'
+  whatsappNumber: "919509071647", // no '+'
   email: "support@example.com",
   address: "123 Spice Street, Patna, Bihar, India",
 
@@ -30,7 +30,7 @@ const CONFIG = {
     secondaryColor: "#2A9D8F",
     accentColor: "#F4A261",
     textColor: "#333333",
-    backgroundColor: "#FAF9F6"
+    backgroundColor: "#ffffffff"
   },
 
   // --- CURRENCY SETTINGS ---
