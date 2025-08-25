@@ -2,7 +2,7 @@
   "name": "laado-saas-react",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://github.com/desuraj/e-commerce-web-saas",
+  "homepage": "https://spcollection.com.np",
   "scripts": {
     "start": "vite",
     "build": "vite build",
