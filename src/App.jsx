@@ -18,7 +18,7 @@ export default function App() {
   }, [])
 
   return (
-    <Router basename="/e-commerce-web-saas">
+    <Router>
       <Navbar />
       <main className="container">
         <Routes>
