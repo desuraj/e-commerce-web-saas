@@ -1,170 +1,128 @@
 [
   {
-    "name": "Haldi",
-    "price": 100,
-    "Type": "Powder",
+    "name": "Kurti",
+    "price": 1599,
+    "Type": "Cotten",
     "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1001.jpg",
     "details": {
-      "Quantity": "1kg",
-      "Material": "Organic",
-      "Type": "Powder",
-      "Color": "Yellow",
-      "Model": "ECO123",
+      "Quantity": "1",
+      "Material": "Cotten",
+      "Type": "Cotten",
+      "Color": "Red",
+      "Model": "COTK01", 
       "Serial": "SN1001"
     }
   },
   {
-    "name": "Jeera",
-    "price": 200,
-    "Type": "Powder",
+    "name": "Kurti",
+    "price": 1899,
+    "Type": "Cotten",
     "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1002.jpg",
     "details": {
-      "Quantity": "500g",
-      "Material": "Organic",
-      "Type": "Powder",
-      "Color": "Brown",
-      "Model": "ECO124",
+      "Quantity": "1",
+      "Material": "Cotten",
+      "Type": "Cotten",
+      "Color": "Blue",
+      "Model": "COTK02",
       "Serial": "SN1002"
     }
   },
   {
-    "name": "Sattu",
-    "price": 150,
-    "Type": "Seeds",
+    "name": "Kurti",
+    "price": 2199,
+    "Type": "Banarsi",
     "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1003.jpg",
     "details": {
-      "Quantity": "500g",
+      "Quantity": "1",
       "Material": "Organic",
-      "Type": "Seeds",
+      "Type": "Banarsi",
+      "Color": "Perpal",
+      "Model": "BARK01",
+      "Serial": "SN1003"
+    }
+  },
+  {
+    "name": "Kurti",
+    "price": 2599,
+    "Type": "Banarsi",
+    "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1004.jpg",
+    "details": {
+      "Quantity": "1",
+      "Material": "Organic",
+      "Type": "Banarsi",
       "Color": "Brown",
-      "Model": "ECO124",
-      "Serial": "SN1002"
+      "Model": "BARK02",
+      "Serial": "SN1004"
     }
   },
   {
-    "name": "Haldi",
-    "price": 100,
-    "Type": "Seeds",
-    "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1001.jpg",
+    "name": "Kurti",
+    "price": 1799,
+    "Type": "Silk",
+    "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1005.jpg",
     "details": {
-      "Quantity": "1kg",
-      "Material": "Organic",
-      "Type": "Seeds",
-      "Color": "Yellow",
-      "Model": "ECO123",
-      "Serial": "SN1001"
+      "Quantity": "1",
+      "Material": "Silk",
+      "Type": "Silk",
+      "Color": "Orange",
+      "Model": "SILK01",
+      "Serial": "SN1005"
     }
   },
   {
-    "name": "Jeera",
-    "price": 200,
-    "Type": "Seed",
-    "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1002.jpg",
+    "name": "Kurti",
+    "price": 2199,
+    "Type": "Silk",
+    "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1006.jpg",
     "details": {
-      "Quantity": "500g",
-      "Material": "Organic",
-      "Type": "Seed",
+      "Quantity": "1",
+      "Material": "Silk",
+      "Type": "Silk",
       "Color": "Brown",
-      "Model": "ECO124",
-      "Serial": "SN1002"
+      "Model": "SILK02",
+      "Serial": "SN1006"
     }
   },
   {
-    "name": "Sattu",
-    "price": 150,
-    "Type": "Seed",
-    "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1003.jpg",
+    "name": "Kurti",
+    "price": 2399,
+    "Type": "Nayera",
+    "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1007.jpg",
     "details": {
-      "Quantity": "500g",
+      "Quantity": "1",
+      "Material": "Mix",
+      "Type": "Nayera",
+      "Color": "Blue",
+      "Model": "NAYK01",
+      "Serial": "SN1007"
+    }
+  },
+  {
+    "name": "Kurti",
+    "price": 2299,
+    "Type": "Nayera",
+    "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1008.jpg",
+    "details": {
+      "Quantity": "1",
       "Material": "Organic",
-      "Type": "Seed",
+      "Type": "Nayera",
       "Color": "Brown",
-      "Model": "ECO124",
-      "Serial": "SN1002"
+      "Model": "NAYK02",
+      "Serial": "SN1008"
     }
   },
   {
-    "name": "Haldi",
-    "price": 100,
-    "Type": "Seeds",
-    "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1001.jpg",
+    "name": "Kurti",
+    "price": 2599,
+    "Type": "Denim",
+    "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1009.jpg",
     "details": {
-      "Quantity": "1kg",
+      "Quantity": "1",
       "Material": "Organic",
-      "Type": "Seeds",
-      "Color": "Yellow",
-      "Model": "ECO123",
-      "Serial": "SN1001"
-    }
-  },
-  {
-    "name": "Jeera",
-    "price": 200,
-    "Type": "Powder",
-    "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1002.jpg",
-    "details": {
-      "Quantity": "500g",
-      "Material": "Organic",
-      "Type": "Powder",
-      "Color": "Brown",
-      "Model": "ECO124",
-      "Serial": "SN1002"
-    }
-  },
-  {
-    "name": "Sattu",
-    "price": 150,
-    "Type": "Powder",
-    "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1003.jpg",
-    "details": {
-      "Quantity": "500g",
-      "Material": "Organic",
-      "Type": "Powder",
-      "Color": "Brown",
-      "Model": "ECO124",
-      "Serial": "SN1002"
-    }
-  },
-  {
-    "name": "Haldi",
-    "price": 100,
-    "Type": "Seed",
-    "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1001.jpg",
-    "details": {
-      "Quantity": "1kg",
-      "Material": "Organic",
-      "Type": "Seed",
-      "Color": "Yellow",
-      "Model": "ECO123",
-      "Serial": "SN1001"
-    }
-  },
-  {
-    "name": "Jeera",
-    "price": 200,
-    "Type": "Seeds",
-    "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1002.jpg",
-    "details": {
-      "Quantity": "500g",
-      "Material": "Organic",
-      "Type": "Seeds",
-      "Color": "Brown",
-      "Model": "ECO124",
-      "Serial": "SN1002"
-    }
-  },
-  {
-    "name": "Sattu",
-    "price": 150,
-    "Type": "Powder",
-    "image": "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1003.jpg",
-    "details": {
-      "Quantity": "500g",
-      "Material": "Organic",
-      "Type": "Powder",
-      "Color": "Brown",
-      "Model": "ECO124",
-      "Serial": "SN1002"
+      "Type": "Denim",
+      "Color": "Dark Green",
+      "Model": "DENK01",
+      "Serial": "SN1009"
     }
   }
 ]

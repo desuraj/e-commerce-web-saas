@@ -22,7 +22,7 @@ export default function ProductDetails({ product, onClose }) {
           <img src={product.image} alt={product.name} />
           <div className="info">
             <h2>{product.name}</h2>
-            <p className="price">{CONFIG.currency.symbol}{product.price}/kg</p>
+            <p className="price">{CONFIG.currency.symbol}{product.price}</p>
             <ul className="specs">
               {Object.entries(product.details || {}).map(([k, v]) => (
                 <li key={k}><strong>{k}:</strong> {v}</li>
