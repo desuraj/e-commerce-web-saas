@@ -7,7 +7,7 @@ const CONFIG = {
   // --- CONTACT INFO ---
   whatsappNumber: "9779816756121", // no '+'
   email: "spcollectionrbj@gmail.com",
-  address: "Patna, bihar, India",
+  address: "Rajbiraj, Saptari Nepal",
 
   // --- SOCIAL LINKS ---
   socialLinks: {

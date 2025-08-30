@@ -6,8 +6,8 @@ export default function About() {
   return (
     <div className="about">
       <h1>About {CONFIG.siteName}</h1>
-      <p>{CONFIG.siteName} is committed to delivering pure, authentic spices with uncompromised quality.</p>
-      <p>We source directly from farmers and ensure rigorous quality checks before packaging.</p>
+      <p>{CONFIG.siteName} We are committed to offering stylish, comfortable, and high-quality ready-made clothes.</p>
+      <p>Our collections are carefully selected to bring you the latest trends with superior fabric and perfect stitching.</p>
     </div>
   )
 }
