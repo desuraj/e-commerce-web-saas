@@ -1,13 +1,13 @@
 const CONFIG = {
   // --- BRAND INFO ---
-  siteName: "LAADO KITCHENS MASALA",
-  logo: "/images/logo.png",
+  siteName: "SP COLLECTION",
+  logo: "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/logo.png",
   // tagline: "Pure Spices, Pure Taste!",
 
   // --- CONTACT INFO ---
-  whatsappNumber: "919509071647", // no '+'
-  email: "support@example.com",
-  address: "123 Spice Street, Patna, Bihar, India",
+  whatsappNumber: "9779816756121", // no '+'
+  email: "spcollectionrbj@gmail.com",
+  address: "Patna, bihar, India",
 
   // --- SOCIAL LINKS ---
   socialLinks: {
@@ -18,10 +18,10 @@ const CONFIG = {
   },
   // --- BANNER  ---
   banner: {
-    title: "Fresh & Pure Spices",
-    subtitle: "Delivered to your doorstep",
+    // title: "Fresh & Pure Spices",
+    // subtitle: "Delivered to your doorstep",
     buttonText: "Shop Now",
-    backgroundImage: "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/SN1001.jpg" // place your image in public/images
+    backgroundImage: "https://raw.githubusercontent.com/desuraj/eimg/main/lkmb/banner.png" // place your image in public/images
   },
 
   // --- THEME SETTINGS ---
@@ -30,13 +30,13 @@ const CONFIG = {
     secondaryColor: "#2A9D8F",
     accentColor: "#F4A261",
     textColor: "#333333",
-    backgroundColor: "#ffffffff"
+    backgroundColor: "#ffffffff" 
   },
 
   // --- CURRENCY SETTINGS ---
   currency: {
     symbol: "₹",
-    code: "INR"
+    code: "NNR"
   },
 
   // --- FEATURE TOGGLES ---
@@ -55,7 +55,7 @@ const CONFIG = {
       .join("\n");
     return `Hello, I want to buy:
 ${product.name}
-Price: ₹${product.price}/kg
+Price: ₹${product.price}
 Quantity: ${quantity}
 Total Price: ₹${totalPrice}
 ${details}`;

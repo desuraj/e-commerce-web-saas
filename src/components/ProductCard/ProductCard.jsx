@@ -21,7 +21,7 @@ export default function ProductCard({ product, onViewDetails }) {
         <p className="product-price">
           {CONFIG.currency.symbol}
           {product.price}
-          /kg
+          {/* /kg */}
         </p>
       </div>
 
