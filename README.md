@@ -1,4 +1,4 @@
-# LAADO SaaS React
+# E-Commerce React
 
 ## Quickstart
 ```bash
