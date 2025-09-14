@@ -5,7 +5,7 @@ const CONFIG = {
   // tagline: "Pure Spices, Pure Taste!",
 
   // --- CONTACT INFO ---
-  whatsappNumber: "9779816756121", // no '+'
+  whatsappNumber: "917352635447", // no '+'
   email: "spcollectionrbj@gmail.com",
   address: "Rajbiraj, Saptari Nepal",
 
