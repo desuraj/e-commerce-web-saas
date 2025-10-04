@@ -1,93 +1,187 @@
+:root {
+  --navbar-height: 80px; /* fallback until JS sets height */
+}
+
+/* ---------- Desktop / base ---------- */
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 20px;
+  padding: 40px 80px;
   background: var(--backgroundColor);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 8px rgba(0,0,0,0.06);
 }
 
-/* Brand */
+/* brand centered on desktop */
 .brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   gap: 10px;
   text-decoration: none;
   color: var(--textColor);
   font-weight: 700;
+  z-index: 1010;
 }
-.brand img {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
-}
-.brand span {
-  color: var(--primaryColor);
-}
+.brand img { width: 100px; height: 80px; }
+.brand span { color: var(--primaryColor); }
 
-/* Menu Button */
-.menu-toggle {
-  display: none;
-  font-size: 26px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--textColor);
-}
-
-/* Desktop nav */
-.navlinks {
+/* Desktop inline nav */
+.navlinks.desktop {
   display: flex;
-  gap: 18px;
+  gap: 40px;
+  align-items: center;
 }
-.navlinks a {
+.navlinks.desktop a {
   text-decoration: none;
   color: var(--textColor);
   padding: 8px 10px;
   border-radius: 8px;
 }
-
-.navlinks a:hover {
-  color: #e7855f;
+.navlinks.desktop a:hover {
+  transform: scale(1.03);
+  font-weight: bold;
+  color: #6e6e6e;
+}
+.navlinks.desktop a.active {
+  background: var(--accentColor);
+  color: #111;
 }
 
-.navlinks a.active { background: var(--accentColor); color: #111; }
+/* mobile panel (hidden on desktop) */
+.navlinks.mobile { display: none; }
 
-
-/* Cart */
-.cart {
-  font-size: 22px;
+/* toggles hidden on desktop */
+.menu-toggle,
+.close-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  color: var(--textColor);
 }
 
-/* Mobile view */
+/* cart */
+.cart { font-size: 22px; }
+
+/* overlay hidden */
+.menu-overlay { display: none; }
+
+/* ---------- Mobile styles ---------- */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 12px 0 12px 12px;
+  }
+
+  /* menu button on left (visible when not open) */
   .menu-toggle {
-    display: block; /* show hamburger */
-    margin-right: 10px;
-  }
-
-  /* Hide nav by default */
-  .navlinks {
+    display: block;
     position: absolute;
-    top: 60px;
     left: 0;
-    background: var(--backgroundColor);
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-    padding: 20px;
-    width: 220px;
-    height: 100vh;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1015;
   }
 
-  /* Show menu when open */
-  .navlinks.open {
-    transform: translateX(0);
+  /* brand shifts on mobile */
+  .brand {
+    position: relative;
+    left: auto;
+    transform: none;
+    margin-left: 44px;
+    z-index: 1010;
   }
+
+  /* hide desktop inline nav */
+  .navlinks.desktop { display: none; }
+
+  /* close button on navbar right when menu open */
+  .close-toggle {
+    display: block;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1016;
+  }
+
+  /* MOBILE PANEL (always in DOM). Inline style animates 'right' and opacity. */
+  .navlinks.mobile {
+    display: flex;
+    position: fixed;
+    top: var(--navbar-height);
+    /* IMPORTANT: set right baseline; JS will set inline 'right' value */
+    right: -100vw; /* baseline off-screen to left in CSS; inline style will override */
+    height: calc(100vh - var(--navbar-height));
+    width: 86%;
+    max-width: 360px;
+    background: var(--backgroundColor);
+    box-shadow: -6px 0 18px rgba(0,0,0,0.12);
+
+    /* JS inline will set right and opacity + transition */
+    transform: none;
+    opacity: 0;
+
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px;
+    z-index: 995;
+    overflow-y: auto;
+    will-change: right, opacity;
+    pointer-events: none;
+  }
+
+  /* link styles */
+  .navlinks.mobile a {
+    display: block;
+    padding: 12px 8px;
+    text-decoration: none;
+    color: var(--textColor);
+    border-radius: 6px;
+  }
+  .navlinks.mobile a:hover { font-weight: 600; color: #e7855f; }
+  .navlinks.mobile a.active { background: var(--accentColor); color: #111; }
+
+  /* overlay below navbar */
+  .menu-overlay {
+    display: block;
+    position: fixed;
+    top: var(--navbar-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.28);
+    opacity: 0;
+    transition: opacity 260ms ease;
+    z-index: 990;
+    pointer-events: none;
+  }
+  .menu-overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* cart on navbar right */
+  .cart {
+    position: absolute;
+    right: 48px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1012;
+  }
+}
+
+/* focus outlines */
+.menu-toggle:focus,
+.close-toggle:focus,
+.navlinks a:focus {
+  outline: 2px solid rgba(0,0,0,0.12);
+  outline-offset: 2px;
 }
